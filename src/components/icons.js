@@ -1,0 +1,63 @@
+// Mappe un petit vocabulaire d'icônes "lucide-style" (même esprit que
+// frontend/src/icons/index.jsx) vers Feather/Ionicons d'@expo/vector-icons,
+// pour découpler le reste de l'app du choix de la librairie d'icônes.
+import { Feather, Ionicons } from '@expo/vector-icons';
+
+const feather = (name) => (props) => <Feather name={name} size={props.size ?? 20} color={props.color ?? '#1f2937'} {...props} />;
+const ion = (name) => (props) => <Ionicons name={name} size={props.size ?? 20} color={props.color ?? '#1f2937'} {...props} />;
+
+export const Star = ion('star');
+export const StarOutline = ion('star-outline');
+export const MapPin = feather('map-pin');
+export const Camera = feather('camera');
+export const Heart = feather('heart');
+export const HeartFilled = ion('heart');
+export const Search = feather('search');
+export const Filter = feather('filter');
+export const ChevronRight = feather('chevron-right');
+export const ChevronLeft = feather('chevron-left');
+export const ChevronDown = feather('chevron-down');
+export const Check = feather('check');
+export const CheckCircle = feather('check-circle');
+export const X = feather('x');
+export const XCircle = feather('x-circle');
+export const Clock = feather('clock');
+export const Calendar = feather('calendar');
+export const MessageCircle = feather('message-circle');
+export const Bell = feather('bell');
+export const User = feather('user');
+export const Users = feather('users');
+export const ShoppingCart = feather('shopping-cart');
+export const Home = feather('home');
+export const Settings = feather('settings');
+export const LogOut = feather('log-out');
+export const Phone = feather('phone');
+export const Mail = feather('mail');
+export const Lock = feather('lock');
+export const Eye = feather('eye');
+export const EyeOff = feather('eye-off');
+export const Plus = feather('plus');
+export const Minus = feather('minus');
+export const Edit = feather('edit-2');
+export const Trash = feather('trash-2');
+export const Image = feather('image');
+export const Paperclip = feather('paperclip');
+export const Send = feather('send');
+export const AlertTriangle = feather('alert-triangle');
+export const ShieldCheck = ion('shield-checkmark');
+export const BadgeCheck = ion('checkmark-circle');
+export const Briefcase = feather('briefcase');
+export const DollarSign = feather('dollar-sign');
+export const TrendingUp = feather('trending-up');
+export const FileText = feather('file-text');
+export const Upload = feather('upload');
+export const ArrowLeft = feather('arrow-left');
+export const MoreVertical = feather('more-vertical');
+export const Info = feather('info');
+export const Sliders = feather('sliders');
+export const Navigation = feather('navigation');
+export const Menu = feather('menu');
+export const Receipt = feather('file-text');
+export const Wallet = feather('credit-card');
+export const Layers = feather('layers');
+export const Tag = feather('tag');
